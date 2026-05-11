@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Pedido</h1>
+</header>
+
+<nav>
+    <a href="index.php">Inicio</a>
+    <a href="pedidos.php">Hacer Pedido</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+
+        <form action="guardar.php" method="POST">
+
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+
+            <select name="producto">
+                <option>Reloj Inteligente Básico</option>
+                <option>Reloj Inteligente Premium</option>
+                <option>Reloj Inteligente Wi‑Fi</option>
+            </select>
+
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+
+            <button type="submit">Guardar Pedido</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
